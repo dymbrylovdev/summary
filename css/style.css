@@ -164,6 +164,9 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+.main__block-right__education--block p {
+  line-height: 1.5;
+}
 .main__block-right__education--skills {
   margin-top: 50px;
   display: -webkit-box;

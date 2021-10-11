@@ -190,12 +190,15 @@ body {
 
             &--block {
                 margin: 50px 0;
-
                 &-years {
                     color: #999999;
                     font-family: $ff-poppins;
                     font-weight: $fw-semiBold;
                 }
+                p {
+                    line-height: 1.5;
+                }
+
             }
 
             &--skills {
