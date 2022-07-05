@@ -19,13 +19,10 @@ body {
   text-align: center;
   max-width: 1024px;
   margin: 0 auto 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .main__block-left {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 3em;
   width: 33.33%;
   height: 100%;
@@ -39,10 +36,8 @@ body {
   height: 200px;
   border-radius: 100%;
   overflow: hidden;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-box-shadow: 5px 5px 10px #242424;
-          box-shadow: 5px 5px 10px #242424;
+  transform: translateX(-50%);
+  box-shadow: 5px 5px 10px #242424;
   background: url("../img/avatar.jpg") 50% 0/cover no-repeat;
 }
 .main__block-left--name {
@@ -92,8 +87,6 @@ body {
   width: 60%;
   margin: 0 auto;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .main__block-right__union-left {
@@ -103,20 +96,11 @@ body {
   border-top: 0;
 }
 .main__block-right__union-mid {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   background-color: #C0D8DE;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .main__block-right__union-mid a {
   display: block;
@@ -151,7 +135,7 @@ body {
   border-top: 0;
 }
 .main__block-right__education-title {
-  margin: 50px 0 0;
+  margin: 50px 0;
   padding: 15px 0;
   color: #fff;
   background-color: #242424;
@@ -167,104 +151,36 @@ body {
 .main__block-right__education--block p {
   line-height: 1.5;
 }
+.main__block-right__education--block ul {
+  text-align: left;
+}
+.main__block-right__education--block ul li {
+  margin: 10px;
+}
 .main__block-right__education--skills {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.main__block-right__education--skills__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 40%;
-}
-.main__block-right__education--skills__left--block {
-  margin: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.main__block-right__education--skills__left--block--name {
-  width: 50%;
-}
-.main__block-right__education--skills__left--block--range {
-  width: 50%;
-  height: 10px;
-  position: relative;
-  background-color: #B9B9B9;
-}
-.main__block-right__education--skills__left--block--range::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: #242424;
-}
-.main__block-right__education--skills__left--block .js::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30%;
-  height: 100%;
-  background-color: #242424;
-}
-.main__block-right__education--skills__left--block .python::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30%;
-  height: 100%;
-  background-color: #242424;
+  justify-content: space-around;
 }
 .main__block-right__education--skills__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 40%;
 }
 .main__block-right__education--skills__right--block {
   margin: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .main__block-right__education--skills__right--block--name {
-  width: 50%;
+  text-align: center;
 }
 .main__block-right__education--skills__right--block--range {
-  width: 30%;
+  width: 50%;
   height: 10px;
   position: relative;
   background-color: #B9B9B9;
@@ -292,11 +208,8 @@ body {
 .main__block-right__education--myproject {
   padding: 0;
   margin: 1em 1em 0;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 20px 1fr;
-  -ms-grid-columns: 1fr 20px 1fr;
-      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
   grid-gap: 20px;
   list-style: none;
 }
@@ -306,31 +219,27 @@ body {
 .main__block-right__education--myproject--item-link__photo {
   overflow: hidden;
   height: 100px;
-  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.3s ease;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 .main__block-right__education--myproject--item-link__photo img {
   width: 100%;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .main__block-right__education--myproject--item-link h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #242424;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .main__block-right__education--myproject--item-link:hover .main__block-right__education--myproject--item-link__photo {
-  -webkit-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.2);
 }
 .main__block-right__education--myproject--item-link:hover .main__block-right__education--myproject--item-link__photo img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 .main__block-right__education--myproject--item-link:hover h3 {
-  text-shadow: 0px 3px 3px #969696;
+  text-shadow: 0px 3px 3px rgb(150, 150, 150);
 }
+
+/*# sourceMappingURL=style.css.map */
